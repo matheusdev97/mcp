@@ -15,6 +15,9 @@ app.post('/enviar', async (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('MCP online!');
+});
 app.listen(3000, () => {
   console.log('Painel rodando na porta 3000');
 });
